@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 
 const NavbarContainer = styled.nav`
@@ -30,10 +30,10 @@ const ListItem = styled.li`
   margin-left: 10px;
 `;
 
-const NavLinkStyled = styled(NavLink)`
+const NavLinkStyled = styled( NavLink)`
   text-decoration: none;
   color: #333333;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -57,12 +57,6 @@ function Navbar() {
         </ListItem>
         <ListItem>
         <NavLinkStyled to="/about">About</NavLinkStyled>
-        </ListItem>
-        <ListItem>
-        <NavLinkStyled to="/Signin" >Sign in</NavLinkStyled>
-        </ListItem>
-        <ListItem>
-        <NavLinkStyled to="/Signup">Sign up</NavLinkStyled>
         </ListItem>
         <ListItem>
         <NavLinkStyled to="/Contact">Contact</NavLinkStyled>
