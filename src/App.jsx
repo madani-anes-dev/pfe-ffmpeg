@@ -7,7 +7,11 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import About from './components/About'
 import Contact from './components/Contact'
-
+import Tools from './components/Tools';
+import TrimVideo from './components/TrimVideo';
+import Info from './components/Info';
+import ColorInversionFooter from './components/ColorInversionFooter';
+import Footer from './components/Footer';
 
 
 const ffmpeg = createFFmpeg({
@@ -39,9 +43,9 @@ function App() {
               <Route path="/" element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/Contact" element={<Contact/>}/>
-
-
             </Routes>
+            <About/>
+            <Footer/>
         </Router>
       </>
       ) : (
@@ -52,8 +56,3 @@ function App() {
 }
 
 export default App;
-
-
-
-      
-    
